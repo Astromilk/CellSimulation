@@ -5,10 +5,7 @@ This code simulates the motion and deformation of cells with subcellular element
 
 Configuration of code
 The model was developed with C++ code. The code was compiled and built with Microsoft Visual Studio Community 2019 at Win 10 and Win 11 platform. An open-source library (Point Cloud Library, PCL 1.12.1, https://github.com/PointCloudLibrary/pcl/releases) and Open Multi-Processing (OpenMP, integrated in VS 2019) were used. They should be configured before compiling and building the code. The code does not require any other non-standard hardware.
-There are 2 methods to run the code:
-1. Using Visual Studio project file (about 800MB). Because of the storage limitation of the GitHub repository. The Visual studio project file is openly available in another repository at (https://bhpan.buaa.edu.cn:443/link/10CFC59932ECB96713F4416174BB6817).
-The project file has included and configured the .h and .dll files of the open-source library. As long as you have Microsoft Visual Studio Community 2019 installed, you can open the project through SCE.sln, and run the code in "Release" mode ("Debug" mode was not configured).
-2. Using the source code from GitHub repository. The folder SimulationCode_V1 includes the source code (.h and .cpp files) and input dataset (.csv files in folder "Exm"). We suggest installing Microsoft Visual Studio Community 2019 (https://visualstudio.microsoft.com/zh-hans/vs/older-downloads/). Other version of Visual studio or other Integrated Development Environment were not tested. 
+Using the source code from GitHub repository. The folder SimulationCode_V1 includes the source code (.h and .cpp files) and input dataset (.csv files in folder "Exm"). We suggest installing Microsoft Visual Studio Community 2019 (https://visualstudio.microsoft.com/zh-hans/vs/older-downloads/). Other version of Visual studio or other Integrated Development Environment were not tested. 
 The open-source library (Point Cloud Library, PCL 1.12.1, https://github.com/PointCloudLibrary/pcl/releases) need to be installed. 
 Then create a new c++ project, put the source code files and dataset folder into the working path, configure the paths of PCL .h and .lib files, copy the .dll files into the working path too. Make sure OpenMP option is "ON". ISO c++ 14 is applied.
 The time of code configuration depends on the time to install Microsoft Visual Studio Community 2019 and open-source library, which will cost about 45 minutes.
@@ -26,4 +23,3 @@ Running
 Reference
 1. Sandersius, S. A. and T. J. Newman (2008). "Modeling cell rheology with the subcellular element model." Physical biology 5(1): 015002.
 2. Yanagida, A., E. Corujo-Simon, C. K. Revell, P. Sahu, G. G. Stirparo, I. M. Aspalter, A. K. Winkel, R. Peters, H. De Belly and D. A. Cassani (2022). "Cell surface fluctuations regulate early embryonic lineage sorting." Cell 185(5): 777-793. e720.
-
